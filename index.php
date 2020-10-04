@@ -12,7 +12,9 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="fontawesome/css/solid.css" rel="stylesheet">
 
 <meta name="theme-color" content="#563d7c">
 
@@ -45,7 +47,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php" title="Inicio"> <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php" title="Inicio"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
       </li>
       
       <!--
@@ -79,8 +81,8 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
