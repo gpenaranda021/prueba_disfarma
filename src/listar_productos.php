@@ -105,6 +105,7 @@ if(isset($resp["response"]))
                 <th>Descripción</th>
                 <th>Cantidad en inv.</th>
                 <th>Precio x und.</th>
+                <th>Imagen</th>
             </tr>
           </thead>
           <tbody>';
@@ -117,6 +118,7 @@ if(isset($resp["response"]))
             <td>'.$d["description"].'</td>
             <td>'.$d["quantity"].'</td>
             <td>'.$d["price"].'</td>
+            <td><img src="'.$d["image"].'" height="200px" width="200px"></td>
         </tr>';
         //echo $d["id"];
         //echo $d["name"];

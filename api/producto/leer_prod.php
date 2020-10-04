@@ -42,7 +42,9 @@ if($num>0){
             "name" => $nom_item,
             "description" => html_entity_decode($des_item),
             "quantity"=>$cant_item,
-            "price" => $vlr_item
+            "price" => $vlr_item,
+            "image"=>$img_item
+
             
         );
   
