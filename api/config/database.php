@@ -1,14 +1,14 @@
 <?php
 class Database{
   
-    // specify your own database credentials
+    // Especificar datos de la BD para pruebas
     private $host = "localhost";
     private $db_name = "prueba_disfarma";
     private $username = "root";
     private $password = "";
     public $conn;
   
-    // get the database connection
+    // Función para gestionar conexiones
     public function getConnection(){
   
         $this->conn = null;

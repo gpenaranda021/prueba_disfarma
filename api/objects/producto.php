@@ -1,11 +1,11 @@
 <?php
 class Producto{
   
-    // database connection and table name
+    // Nombre de la tabla y elemento de conexión a BD
     private $conn;
     private $table_name = "inventario";
   
-    // object properties
+    // Propiedades del objeto
     public $id;
     public $name;
     public $description;
@@ -13,27 +13,24 @@ class Producto{
     public $price;
     public $image;
     
-    //public $category_id;
-    //public $category_name;
-    //public $created;
-  
-    // constructor with $db as database connection
+    
+    // constructor con elemento de conexión a BD $db 
     public function __construct($db){
         $this->conn = $db;
     }
 
-    // read products
+    // función para listar los productos
     function listar_productos()
     {
-        // select all query
+        // 
         $query = "SELECT cod_item, nom_item, des_item, cant_item, vlr_item, img_item
                     FROM ". $this->table_name." 
                     ORDER BY cod_item ASC";
     
-        // prepare query statement
+        // preparar query para ejecución
         $stmt = $this->conn->prepare($query);
     
-        // execute query
+        // ejecutar query
         $stmt->execute();
     
         return $stmt;
